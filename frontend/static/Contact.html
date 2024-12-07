@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us - Best Cars Dealership</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/static/style.css">
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      background-color: #008cba;
+    }
+    .navbar a {
+      color: white !important;
+      font-weight: bold;
+    }
+    .navbar .nav-link.active {
+      background-color: #005f75;
+      border-radius: 5px;
+    }
+    .contact-section {
+      background-color: white;
+      padding: 40px;
+      margin: 20px auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+    }
+    .contact-section h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .contact-info {
+      margin-bottom: 20px;
+    }
+    .contact-info p {
+      font-size: 1.1rem;
+      color: #555;
+      margin: 5px 0;
+    }
+    .contact-form {
+      margin-top: 30px;
+    }
+    .contact-form input, .contact-form textarea {
+      margin-bottom: 15px;
+    }
+    .contact-form button {
+      background-color: #008cba;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background-color: #005f75;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Best Cars</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <div class="contact-section">
+    <h2>Get in Touch with Us</h2>
+    <div class="contact-info">
+      <p><strong>Best Cars Dealership</strong></p>
+      <p>1234 Elm Street, Suite 567</p>
+      <p>Springfield, IL 62704</p>
+      <p><strong>Phone:</strong> (555) 123-4567</p>
+      <p><strong>Email:</strong> contact@bestcarsdealership.com</p>
+    </div>
+
+    <div class="contact-form">
+      <h3>Send Us a Message</h3>
+      <form action="/send-message" method="POST">
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="mb-3">
+          <label for="subject" class="form-label">Subject</label>
+          <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (Optional for interactive components) -->
+  <script src="/static/bootstrap.bundle.min.js"></script>
+</body>
+</html>

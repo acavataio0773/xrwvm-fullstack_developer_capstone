@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Best Cars Dealership</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      background-color: #008cba;
+      color: white;
+    }
+    .navbar a {
+      color: white;
+      font-weight: bold;
+    }
+    .card {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card .title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #333;
+    }
+    .container {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .container h1 {
+      font-size: 2.5rem;
+      color: #333;
+      margin-bottom: 1rem;
+    }
+    .container p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+    .card-body p {
+      margin-bottom: 0.5rem;
+    }
+    .card-img-top {
+      height: 250px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%; color: white;">Dealerships</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <div class="container">
+    <h1>About Us</h1>
+    <p>
+      At Best Cars Dealership, we pride ourselves on offering a wide range of high-quality vehicles. 
+      Whether you're looking for a reliable domestic car or an exquisite imported vehicle, we've got you covered.
+      Our mission is to provide exceptional service and unbeatable prices.
+    </p>
+  </div>
+
+  <!-- Team Section -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="/static/person1.jpg" alt="John Doe">
+          <div class="card-body">
+            <p class="title">John Doe</p>
+            <p>CEO & Founder</p>
+            <p class="card-text">With over 20 years of experience in the automotive industry, John is passionate about connecting people with their dream cars.</p>
+            <p>john.doe@example.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="/static/person2.jpg" alt="Jane Smith">
+          <div class="card-body">
+            <p class="title">Jane Smith</p>
+            <p>Marketing Manager</p>
+            <p class="card-text">Jane leads our marketing team with innovative strategies to make Best Cars a household name.</p>
+            <p>jane.smith@example.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="/static/person3.jpg" alt="Mark Johnson">
+          <div class="card-body">
+            <p class="title">Mark Johnson</p>
+            <p>Sales Manager</p>
+            <p class="card-text">Mark's expertise ensures every customer finds the perfect vehicle tailored to their needs.</p>
+            <p>mark.johnson@example.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
